@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 3", "Övning 3.csproj", "{C67ECB90-BB75-4F06-8B0C-9A03C662B6F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 3Tests", "..\Övning 3Tests\Övning 3Tests.csproj", "{A3303A15-49BA-4D7D-A499-0D475ECFABC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C67ECB90-BB75-4F06-8B0C-9A03C662B6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67ECB90-BB75-4F06-8B0C-9A03C662B6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67ECB90-BB75-4F06-8B0C-9A03C662B6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67ECB90-BB75-4F06-8B0C-9A03C662B6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3303A15-49BA-4D7D-A499-0D475ECFABC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3303A15-49BA-4D7D-A499-0D475ECFABC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3303A15-49BA-4D7D-A499-0D475ECFABC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3303A15-49BA-4D7D-A499-0D475ECFABC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95F9A5DF-BF78-4677-8967-18561A354066}
+	EndGlobalSection
+EndGlobal
