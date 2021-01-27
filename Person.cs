@@ -32,7 +32,8 @@ namespace Övning_3
 				if (value > 0) age = value;
 				else
 				{
-					Console.WriteLine($"\nFirst Name {fName} has age {value}.");
+					Console.WriteLine("\nNext Person in the list of adding people:");
+					Console.WriteLine($"First Name {fName} has age {value}.");
 					throw new ArgumentException("Age must be 1 or more, please fix and Rerun!");
 				}
 			}
@@ -48,12 +49,14 @@ namespace Övning_3
 			{
 				if (string.IsNullOrEmpty(value))
 				{
-					Console.WriteLine($"\nFirst Name is missing.");
+					Console.WriteLine("\nNext Person in the list of adding people:");
+					Console.WriteLine($"First Name is missing.");
 					throw new ArgumentException("First Name is obligatory, please fix and Rerun!");
 				}
 				else if (value.Length < 2 || value.Length > 10)
 				{
-					Console.WriteLine($"\nFirst Name {value} has length {value.Length} or is missing.");
+					Console.WriteLine("\nNext Person in the list of adding people:");
+					Console.WriteLine($"First Name {value} has length {value.Length} or is missing.");
 					throw new ArgumentException("First Name length must be between 2 and 10, please fix and Rerun!");
 				}
 				else fName = value;
