@@ -6,21 +6,21 @@ namespace Övning_3
 {
 	class PersonUtils
     {
-        private List<Person> personUtils;
+        private List<Person> personList;
 
         public PersonUtils()
         {
-            personUtils = new List<Person>();
+            personList = new List<Person>();
         }
 
         public Person[] GetPersons()
         {
-            return personUtils.ToArray();
+            return personList.ToArray();
         }
 
         internal void AddPerson(string fName, string Lname, int age, int height, int weight)
         {
-            personUtils.Add(new Person(fName, Lname, age, height, weight));
+            personList.Add(new Person(fName, Lname, age, height, weight));
         }
     }
 }

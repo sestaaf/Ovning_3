@@ -10,12 +10,22 @@ namespace Övning_3
 
 		static void Main(string[] args)
 		{
-			SeedData();
-
+			try
+			{
+				AddPersons();
+			}
+			catch (ArgumentException ex)
+			{
+				Console.WriteLine(ex.Message);
+				Console.WriteLine("\nTryck valfri tangent för att avsluta.");
+				Console.ReadLine();
+			}
+			Console.WriteLine("\nTryck valfri tangent för att avsluta.");
+			Console.ReadLine();
 		}
-		private static void SeedData()
+		private static void AddPersons()
 		{
-			personUtils.AddPerson("Sven-Erik", "Staaf", 62, 181, 101);
+			personUtils.AddPerson("Kajsa", "Anka", 120, 115, 40);
 			personUtils.AddPerson("Kalle", "Anka", 120, 120, 45);
 			personUtils.AddPerson("Janne", "Långben", 123, 190, 80);
 		}
