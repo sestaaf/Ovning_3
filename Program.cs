@@ -7,12 +7,12 @@ namespace Övning_3
 	{
 		static PersonUtils personUtils = new PersonUtils();
 
-
 		static void Main(string[] args)
 		{
 			try
 			{
 				AddPersons();
+				//SetAge(???, age);
 			}
 			catch (ArgumentException ex)
 			{
@@ -27,7 +27,7 @@ namespace Övning_3
 			personUtils.AddPerson("Kalle", "Anka", 120, 120, 45);
 			personUtils.AddPerson("Janne", "Långben", 123, 190, 80);
 			// Nedan testperson med alla 3 fel (stannar på första).
-			personUtils.AddPerson("", "", -1, 190, 80);
+			// personUtils.AddPerson("", "", -1, 190, 80);
 		}
 	}
 }
