@@ -17,15 +17,13 @@ namespace Övning_3
 			catch (ArgumentException ex)
 			{
 				Console.WriteLine(ex.Message);
-				Console.WriteLine("\nTryck valfri tangent för att avsluta.");
-				Console.ReadLine();
 			}
 			Console.WriteLine("\nTryck valfri tangent för att avsluta.");
 			Console.ReadLine();
 		}
 		private static void AddPersons()
 		{
-			personUtils.AddPerson("Kajsa", "Anka", 120, 115, 40);
+			personUtils.AddPerson("", "Anka", 120, 115, 40);
 			personUtils.AddPerson("Kalle", "Anka", 120, 120, 45);
 			personUtils.AddPerson("Janne", "Långben", 123, 190, 80);
 		}

@@ -46,9 +46,14 @@ namespace Övning_3
 			}
 			set
 			{
-				if (value.Length < 2 || value.Length > 10)
+				if (string.IsNullOrEmpty(value))
 				{
-					Console.WriteLine($"\nFirst Name {value} has length {value.Length} eller fattas.");
+					Console.WriteLine($"\nFirst Name is missing.");
+					throw new ArgumentException("First Name is obligatory, please fix and Rerun!");
+				}
+				else if (value.Length < 2 || value.Length > 10)
+				{
+					Console.WriteLine($"\nFirst Name {value} has length {value.Length} or is missing.");
 					throw new ArgumentException("First Name length must be between 2 and 10, please fix and Rerun!");
 				}
 				else fName = value;
@@ -63,7 +68,12 @@ namespace Övning_3
 			}
 			set
 			{
-				if (value.Length < 3 || value.Length > 15)
+				if (string.IsNullOrEmpty(value))
+				{
+					Console.WriteLine($"\nLast Name is missing.");
+					throw new ArgumentException("Last Name is obligatory, please fix and Rerun!");
+				}
+				else if (value.Length < 3 || value.Length > 15)
 				{
 					Console.WriteLine($"\nFirst Name {fName} has Last Name length {value.Length}.");
 					throw new ArgumentException("Last Name length must be between 3 and 15, please fix and Rerun!");
