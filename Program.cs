@@ -12,15 +12,16 @@ namespace Övning_3
 			try
 			{
 				AddPersons();
-				//SetAge(???, age);
 			}
 			catch (ArgumentException ex)
 			{
 				Console.WriteLine(ex.Message);
 			}
+
 			Console.WriteLine("\nTryck valfri tangent för att avsluta.");
 			Console.ReadLine();
 		}
+
 		private static void AddPersons()
 		{
 			personUtils.AddPerson("Kajsa", "Anka", 120, 115, 40);

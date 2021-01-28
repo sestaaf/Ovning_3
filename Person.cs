@@ -29,7 +29,10 @@ namespace Övning_3
 			}
 			set
 			{
-				if (value > 0) age = value;
+				//if (value > 0) age = value;
+				//if (value > 0) SetAge(this.fName, value);
+				
+				if (value > 0) if (value > 0) age = value; 
 				else
 				{
 					Console.WriteLine("\nNext Person in the list of adding people:");
@@ -38,6 +41,12 @@ namespace Övning_3
 				}
 			}
 		}
+
+		private void SetAge(string v, int value)
+		{
+			throw new NotImplementedException();
+		}
+
 		private string fName;
 		public string FName
 		{
