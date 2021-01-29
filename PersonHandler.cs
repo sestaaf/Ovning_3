@@ -6,11 +6,21 @@ namespace Övning_3
 {
 	public class PersonHandler
 	{
-		private readonly IEnumerable<Person> personList;
+		private List<Person> personList;
 
-		public PersonHandler(IEnumerable<Person> personList)
+		public PersonHandler()
 		{
-			this.personList = personList;
+			personList = new List<Person>();
+		}
+
+		public Person[] GetPersons()
+		{
+			return personList.ToArray();
+		}
+
+		internal void AddPerson(string fName, string Lname, int age, int height, int weight)
+		{
+			personList.Add(new Person(fName, Lname, age, height, weight));
 		}
 
 		public void SetAge(Person pers, int age)

@@ -5,13 +5,17 @@ namespace Övning_3
 {
 	class Program
 	{
-		static PersonUtils personUtils = new PersonUtils();
+		static PersonHandler personUtils = new PersonHandler();
 
 		static void Main(string[] args)
 		{
 			try
 			{
-				AddPersons();
+				//AddPersons();
+				Person person1 = new Person();
+				personUtils.SetAge(person1, 55);
+				Console.WriteLine($"Person {person1.FName} ålder är {person1.Age}");
+
 			}
 			catch (ArgumentException ex)
 			{
